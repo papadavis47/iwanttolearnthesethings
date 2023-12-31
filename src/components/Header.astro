@@ -1,25 +1,27 @@
 ---
-import HeaderLink from './HeaderLink.astro';
+import NavLink from './NavLink.astro';
 import { SITE_TITLE } from '../consts';
 import * as Icon from '@astropub/icons';
 ---
 
-<header>
-  <nav>
-    <h2><a href='/'>{SITE_TITLE}</a></h2>
-    <div class='internal-links'>
-      <HeaderLink href='/'>Home</HeaderLink>
-      <HeaderLink href='/posts'>All Posts</HeaderLink>
+<header class='py-6 px-3'>
+  <nav class='flex align-baseline'>
+    <h2 class='mr-auto'><a href='/' class='text-2xl'>{SITE_TITLE}</a></h2>
+    <div class='flex gap-x-12 align-baseline'>
+      <div class='text-xl flex gap-4'>
+        <NavLink href='/'>Home</NavLink>
+        <NavLink href='/posts'>All Posts</NavLink>
+      </div>
+      <div class='flex gap-4 align-baseline'>
+        <a href='https://twitter.com/papadavis47' target='_blank'>
+          <span class='sr-only'>Follow John on Twitter</span>
+          <Icon.TwitterLogo height='40' width='40' />
+        </a>
+        <a href='https://github.com/papadavis47/iwanttolearnthesethings' target='_blank'>
+          <span class='sr-only'>Programmers go to GitHub repo if interested</span>
+          <Icon.GitHubLogo height='40' width='40' />
+        </a>
+      </div>
     </div>
-    <div class='social-links'>
-      <a href='https://twitter.com/papadavis47' target='_blank'>
-        <span class='sr-only'>Follow John on Twitter</span>
-        <Icon.TwitterLogo height='40' width='40' />
-      </a>
-      <a href='https://github.com/papadavis47/iwanttolearnthesethings' target='_blank'>
-        <span class='sr-only'>Programmers go to GitHub repo if interested</span>
-        <Icon.GitHubLogo height='40' width='40' />
-      </a>
-    </div>
-  </nav></header
->
+  </nav>
+</header>
