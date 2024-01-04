@@ -9,10 +9,7 @@ const { pathname } = Astro.url;
 const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 ---
 
-<a
-  href={href}
-  class:list={[className, isActive ? 'underline' : 'no-underline', 'inline-block']}
-  {...props}
->
+<!-- This is where I hide the link instead of underline it --><!-- previously we underlined with ? 'underline': 'no-underline', 'inline-block'] --><!-- may change it later - we'll see -->
+<a href={href} class:list={[className, isActive ? 'hidden' : 'inline-block']} {...props}>
   <slot />
 </a>
