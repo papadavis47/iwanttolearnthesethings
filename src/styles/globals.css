@@ -1,0 +1,11 @@
+/* This is where I will work on variables */
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --colorSoftBlue: 231 64% 71%;
+  }
+}

@@ -10,6 +10,9 @@ export default {
         sans: ['Mukta', 'sans-serif', ...defaultTheme.fontFamily.sans],
         serif: ['Lora Variable', 'serif', ...defaultTheme.fontFamily.serif],
       },
+      colors: {
+        colorSoftBlue: 'hsl(var(--colorSoftBlue) / <alpha-value>)',
+      },
     },
   },
   plugins: [],
