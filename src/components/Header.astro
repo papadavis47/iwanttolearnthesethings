@@ -5,8 +5,10 @@ import * as Icon from '@astropub/icons';
 ---
 
 <header class='py-10 px-6 border-b-black border-2'>
-  <nav class='flex align-baseline'>
-    <h2 class='mr-auto'><a href='/' class='text-4xl font-serif'>{SITE_TITLE}</a></h2>
+  <nav class='flex align-baseline max-w-7xl mx-auto'>
+    <h2 class='mr-auto'
+      ><a href='/' class='text-3xl font-serif text-colorSoftBlue font-semibold'>{SITE_TITLE}</a></h2
+    >
     <div class='flex gap-x-12 align-baseline'>
       <div class='text-xl flex gap-4'>
         <NavLink href='/'>home</NavLink>
@@ -14,16 +16,6 @@ import * as Icon from '@astropub/icons';
         <NavLink href='/posts/personal-finance'>personal finance</NavLink>
         <NavLink href='/posts/parenting'>parenting</NavLink>
         <NavLink href='/posts/wellness'>wellness</NavLink>
-      </div>
-      <div class='flex gap-4 align-baseline'>
-        <a href='https://twitter.com/papadavis47' target='_blank'>
-          <span class='sr-only'>Follow John on Twitter</span>
-          <Icon.TwitterLogo height='40' width='40' />
-        </a>
-        <a href='https://github.com/papadavis47/iwanttolearnthesethings' target='_blank'>
-          <span class='sr-only'>Programmers go to GitHub repo if interested</span>
-          <Icon.GitHubLogo height='40' width='40' />
-        </a>
       </div>
     </div>
   </nav>
