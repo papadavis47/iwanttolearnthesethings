@@ -3,13 +3,17 @@ import * as Icon from '@astropub/icons';
 const today = new Date();
 ---
 
-<footer class='text-center pt-8 pb-24 px-4 border-t-black border-2'>
+<footer class='text-center pt-10 pb-10 px-4 border-t-colorSoftBlue border-2'>
   &copy; {today.getFullYear()} John William Davis. All rights reserved.
   <div class='flex justify-center gap-4 mt-4'>
-    <a href='https://twitter.com/papadavis47' target='_blank'>
+    <a href='https://twitter.com/papadavis47' target='_blank' class='text-colorSoftBlue'>
       <Icon.TwitterLogo height='40' width='40' />
     </a>
-    <a href='https://github.com/papadavis47/iwanttolearnthesethings' target='_blank'>
+    <a
+      href='https://github.com/papadavis47/iwanttolearnthesethings'
+      target='_blank'
+      class='text-colorSoftBlue'
+    >
       <Icon.GitHubLogo height='40' width='40' />
     </a>
   </div>
