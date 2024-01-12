@@ -1,0 +1,14 @@
+---
+import FormattedDate from '@/components/FormattedDate.astro';
+const { url, title, description, pubDate } = Astro.props;
+---
+
+<li>
+  <a href={`/posts/${url}/`}>
+    <h4 class=''>{title}</h4>
+    <p class=''>
+      <FormattedDate date={pubDate} />
+    </p>
+    <p>{description}</p>
+  </a>
+</li>
