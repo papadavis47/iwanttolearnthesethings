@@ -3,7 +3,7 @@ import FormattedDate from '@/components/FormattedDate.astro';
 const { url, title, description, pubDate } = Astro.props;
 ---
 
-<li>
+<div>
   <a href={`/posts/${url}/`}>
     <h4 class=''>{title}</h4>
     <p class=''>
@@ -11,4 +11,4 @@ const { url, title, description, pubDate } = Astro.props;
     </p>
     <p>{description}</p>
   </a>
-</li>
+</div>

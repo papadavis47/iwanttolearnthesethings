@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import PostListItem from '@/components/PostListItem.astro';
+const posts = (await getCollection('blog')).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+---
+
+<section>
+  {
+    posts.map((post) => (
+      <PostListItem
+        url={post.slug}
+        description={post.data.description}
+        pubDate={post.data.pubDate}
+        title={post.data.title}
+      />
+    ))
+  }
+</section>
