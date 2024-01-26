@@ -3,12 +3,12 @@ import FormattedDate from '@/components/FormattedDate.astro';
 const { url, title, description, pubDate } = Astro.props;
 ---
 
-<div>
+<div class='w-full bg-sky-50 mb-4 font-serif py-6 px-6 rounded-md'>
   <a href={`/posts/${url}/`}>
-    <h4 class=''>{title}</h4>
-    <p class=''>
+    <h4 class='text-3xl text-colorSoftBlue'>{title}</h4>
+    <p class='text-lg py-2'>
       <FormattedDate date={pubDate} />
     </p>
-    <p>{description}</p>
+    <p class='text-xl italic'>{description}</p>
   </a>
 </div>

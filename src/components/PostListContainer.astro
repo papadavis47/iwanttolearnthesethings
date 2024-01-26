@@ -6,7 +6,7 @@ const posts = (await getCollection('blog')).sort(
 );
 ---
 
-<section>
+<section class='my-6 py-4'>
   {
     posts.map((post) => (
       <PostListItem
